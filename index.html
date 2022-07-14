@@ -1,0 +1,56 @@
+<body>
+<style>
+#actions button {
+  outline: none;
+  background-color: #888888;
+  border-radius: 10px;
+   
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-type: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+</style>
+ 
+<center>
+
+
+ <audio id="audio" controls controlsList="nodownload">
+  <source src="https://api.aajnodin.com/storage/7945/1589561664.mp3">  
+</audio> 
+
+</center>
+<center>
+
+  <div id="actions">
+    <button onclick="setPlaySpeed(0.50)" type="button">0.5 x</button>    
+    <button onclick="setPlaySpeed(1.00)" type="button">1.00 x</button>
+    <button onclick="setPlaySpeed(1.50)" type="button">1.50 x</button>
+    <button onclick="setPlaySpeed(2.00)" type="button">2.00 x</button>
+    
+</center>  
+  
+  
+<script>
+var audio = document.getElementById("audio");
+
+
+
+function setPlaySpeed(speed) {
+  audio.playbackRate = speed;
+}
+
+</script>
+
+</body>
+
+</html>
